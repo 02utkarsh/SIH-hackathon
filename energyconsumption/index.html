@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energy consumption calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="title">Energy Consumption</h1>
+    <div class="align">
+        <div id="new">
+		<div id="create">
+		<div id="result">
+            <div id="calc">
+            <form id="frmcalculate">
+                  
+                <p class="marpad">Hours Used Per Day: <input type="text" size="5" id="hoursPerDay" ></p>
+                <p class="marpad">Power Use (Watts): <input type="text" size="5" id="powerWatts"  value=""></p>
+                <p class="marpad">Price (kWh): <input type="text" size="5" id="Price" ></p>
+                <p class="marpad">month:<input  type="text" size="2" id="month"  ></p>
+                <input type="submit" class="button" value="Calculate" onclick="energyCost()">
+            </form>
+         </div>
+       
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <h1 id="costPerHour"></h1>
+                <p class="marpad">Cost Per Hour</p>
+              </div>
+              <div class="col">
+                <h1 id="costPerDay"></h1>
+                <p class="marpad">Cost Per Day</p>
+              </div>
+              <div class="col">
+                <h1 id="costPerMonth"></h1>
+                <p class="marpad">Cost Per Month</p>
+              </div>
+              <div class="col">
+                <h1 id="costPerYear" ></h1>
+			   <p class="marpad">Cost Per Year</p>
+              </div>
+              <div class="col">
+                <h1 id="kwhPerDay" ></h1>  
+                <p class="marpad">kWh Per Day</p>
+              </div>
+            </div>
+		</div>
+        <div id="image">
+        <img src="./WhatsApp Image 2023-09-12 at 10.13.28.jpg" class="img-fluid rounded-top" alt="energy consumption">
+    </div>
+</div>
+</div>
+</div>
+</div>
+        
+        
+    <script src="./index.js"></script>
+</body>
+</html>

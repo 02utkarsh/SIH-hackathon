@@ -1,0 +1,74 @@
+h1{
+    
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 200px;
+    color: black;
+    font-family:fantasy;
+    line-height: 1.2;
+
+}
+#title{
+    background-color: azure;
+}
+
+#create{
+    text-align: center;
+    font-weight: 1000px;
+}
+p{
+    text-decoration: solid;
+    font-size: larger;
+    font-family:fantasy;
+
+}
+.container{
+    margin-top: 40px;
+    height: 100px;
+    width: 200px;
+    border: none;
+
+
+} 
+input{
+    text-transform: capitalize;
+    border:none;
+   
+
+}
+.button{
+    background-color: rgb(119, 180, 198);
+    height:40px;
+    width:100px;
+    border-radius:5px ;
+}
+#image{
+  display:grid;
+   grid-area: auto;
+    width: 800px;
+    position :absolute;
+    right:350px;
+    padding-bottom: 100px;
+    border-radius: 50x;
+    
+    
+}
+#title{
+    background: linear-gradient(300deg, #bee7e2, #a3b2ba, #7ac262);
+    background-size: 200% 1000%;
+    animation: gradient-animation 10s ease infinite;
+    
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+

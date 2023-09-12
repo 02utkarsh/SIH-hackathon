@@ -1,0 +1,213 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title> EAA-TVHE CALCULATOR </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+    </script>
+    </head>
+
+<body background="/img folder/ctys.png">
+<div class="container-fluid">
+<h1><strong> EAA-TVHE CALCULATOR </strong></h1>
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3"
+                <form id="msform">
+                 <h2 id="heading"> "Equal Access to Affordable Technical, Vocational, and Higher Education" </h2>
+                    <ul id="progressbar">
+                        <li class="active" id="account"><strong> About Us </strong></li>
+                        <li id="personal"><strong> Input 1 </strong></li>
+                        <li id="payment"><strong> Input 2 </strong></li>
+                        <li id="confirm"><strong> Result </strong></li>
+                    </ul>
+                    <div class="progress">
+                        <div class="pbar pbar-striped pbar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"> </div>
+                    </div> <br>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title"> About Us </h2>
+        <p> When examining "Equal Access to Affordable Technical, Vocational, and Higher Education" from an institutional perspective, you'll want to assess the policies, practices, and outcomes related to this goal.These additions make the formula even more comprehensive, considering factors related to sports facilities and personality development programs, which contribute to a well-rounded educational experience. As always, the specific weights and metrics used in calculations should align with the institution's goals and context. Conducting a thorough assessment that considers various dimensions of accessibility, affordability, and holistic development is essential for a comprehensive evaluation. </p>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">  </h2>
+                                </div>
+
+
+                            </div>
+                            <img class="region" src="/img folder/Quality eduaction.png" width="600"  height="450" style="border:0"  alt="">
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Start Tool" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title"> Student, Fee, Scholarships and Programs: </h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">  </h2>
+                                </div>
+                                <label class="fieldlabels">Total No of Student: </label> <input type="number" id="stu" name="student" placeholder="" />
+                            <label class="fieldlabels"> No of Students in Techinal , Vocational and other Programs: </label> <input type="number" id="pro" name="programs" placeholder="" />
+                            <label class="fieldlabels"> Average Tution Fee Cost: </label> <input type="number" id="fee" name="tution" placeholder="" />
+                            <label class="fieldlabels"> No of Student Receiving Scholarships </label> <input type="number" id="scho" name="scholarship" placeholder="" />
+                            </div><label class="fieldlabels">Personality Developent Programs:</label>
+                            <select name="Personality" id="Perso">
+                              <option value="Wee">Weekly</option>
+                              <option value="Mon">Monthly</option>
+                              <option value="Quat">Quaterly</option>
+                              <option value="Anu">Anually</option>
+                            </select>
+                        </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="pre" class="pre action-button-pre" value="Pre" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title"> Attendance, Teaching Staff, Sanitation and Technical Facilities: </h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps"> </h2>
+                                </div>
+                            </div><div><label class="fieldlabels">Average Attendance Rate(in %)</label>
+                            <select name="Attendance" id="Atte">
+                              <option value="12">Under 25</option>
+                              <option value="40">25 to 50</option>
+                              <option value="55">50 to 75</option>
+                              <option value="80">75 to 100</option>
+                            </select></div><br>
+                            <div>
+                            <label class="fieldlabels"> Availability Of Sanitation Facilities: </label>
+                            <select name="Sanitation" id="Sani">
+                                <option value="yes">YES</option>
+                                <option value="no">NO</option>
+                              </select>
+                            </div><br>
+                            <div>
+
+                            <label class="fieldlabels"> Availability Of Technical Facilities:  </label>
+                            <select name="Technical" id="Tech">
+                              <option value="yes">YES</option>
+                              <option value="no">NO</option>
+                            </select></div><br>
+
+                            <div>
+                            <label class="fieldlabels"> Availability Of Sports Facilities:  </label>
+                            <select name="Sports" id="Spo">
+                              <option value="yes">YES</option>
+                              <option value="no">NO</option>
+                            </select></div><br>
+
+                            <div><label class="fieldlabels"> Quality Of Teaching Staff(in %): </label>
+                                 <input type="number" id="resi"name="rese" placeholder="Research Scholars" />
+                                 </label> <input type="number" id="phhd" name="phd" placeholder="PhD Holders" />
+                                 <input type="number" name="mtech" id="mte" placeholder="MTech Holders" /></div><br>
+
+                        </div><input type="button" onclick="getInputValue();" name="next" class="next action-button"   value="Next" /> <input type="button" name="pre" class="pre action-button-pre" value="Pre" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">  </h2>
+                                </div>
+                            </div> <br> <br>
+                            <div><h2 class="purple-text text-center"><strong>EAA-TVHE Score: </strong></h2><div id="ccl"></div> </div>
+                            <div class="row justify-content-center">
+
+                                <!-- <div>
+
+                                    <table border="3" id="fish">
+                                      <thead>
+                        <!-- taking the input heading -->
+                                        <!-- <tr>
+                                          <th>STUDENTS&nbsp;&nbsp;</th>
+                                          <th>TECH & VOCA PROG&nbsp;&nbsp;</th>
+                                          <th>TUTION FEE&nbsp;&nbsp;</th>
+                                          <th>SCHOLARSHIP&nbsp;&nbsp;</th>
+                                          <th>PERSONALITY DEV.&nbsp;&nbsp;</th>
+                                          <th>ATTENDANCE&nbsp;&nbsp;</th>
+                                          <th>SANITATION&nbsp;&nbsp;</th>
+                                          <th>TECHNICAL&nbsp;&nbsp;</th>
+                                          <th>TEACHING STAFF&nbsp;&nbsp;</th>
+
+                                        </tr> -->
+                                      <!-- </thead>
+                                      <tbody>
+                                        <tr> -->
+                        <!-- input id where to displayed -->
+                                          <!-- <td id="input1"></td>
+                                          <td id="input2"></td>
+                                          <td id="input3"></td>
+                                          <td id="input4"></td>
+                                          <td id="input5"></td>
+                                          <td id="input6"></td>
+                                          <td id="input7"></td>
+                                          <td id="input8"></td>
+                                          <td id="input9"></td>
+
+
+                                        </tr> -->
+                                      <!-- </tbody>
+                                    </table> -->
+
+
+                                  <!-- </div>  -->
+                                  <div class="mt-3">
+                                    <button class="button submit-btn" type="button" onclick="score()">Calculate</button>
+                                  </div>
+                                  <h2 class="fs-title"> </h2>
+                            <div class="row justify-content-center">
+                                <div class="col-7 text-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getInputValue(){
+
+    let student = document.getElementById("stu").value;
+    let programs = document.getElementById("pro").value;
+    let tution = document.getElementById("fee").value;
+    let scholarship = document.getElementById("scho").value;
+    let Personality = document.getElementById("Perso").value;
+    let Attendance = document.getElementById("Atte").value;
+    let Sanitation = document.getElementById("Sani").value;
+    let Technical = document.getElementById("Tech").value;
+    let staff = document.getElementById("resi,phhd,mte").value;
+
+
+    document.getElementById("input1").innerHTML = student;
+    document.getElementById("input2").innerHTML = programs;
+    document.getElementById("input3").innerHTML = tution;
+    document.getElementById("input4").innerHTML = scholarship
+    document.getElementById("input5").innerHTML = Personality;
+    document.getElementById("input6").innerHTML = Attendance;
+    document.getElementById("input7").innerHTML = Sanitation;
+    document.getElementById("input8").innerHTML = Technical;
+    document.getElementById("input9").innerHTML = staff;
+
+
+    }
+
+    </script>
+<script src="index.js"></script>
+</body>
+</html>
